@@ -41,6 +41,7 @@ Backend e Sistema Online
 Divisão de Tarefas
 Cronograma
 Referências e Inspirações
+
 🕯️ História Detalhada
 Protagonista
 Atributo	Descrição
@@ -69,6 +70,7 @@ Laura	Protagonista	Mariane	Narradora interna; reage aos ambientes
 Pai de Laura	Personagem ausente	Tadeu (a confirmar)	Presente apenas nas fitas cassete
 A Sombra	Ameaça / Antagonista	Sem fala	Manifestação da culpa de Laura
 Mãe de Laura	Personagem ausente	Sem dublagem	Mencionada nas cartas; nunca aparece fisicamente
+
 🔄 Core Loop
 EXPLORAR → ENCONTRAR COLETÁVEL → RECEBER MEMÓRIA → EXPLORAR NOVAMENTE
 O jogador:
@@ -80,6 +82,7 @@ Ao coletar, recebe um fragmento da memória de Laura (áudio ou texto)
 A sombra aparece ocasionalmente, criando tensão e urgência
 Ao encontrar a fita cassete, pode salvar o progresso
 Com memórias suficientes, desbloqueia o ending correspondente
+
 🎮 Mecânicas de Jogo
 6.1 Movimentação
 Mecânica	Detalhe
@@ -113,13 +116,17 @@ Contato direto	Teleporta o jogador para o último ponto de save (fita cassete)
 Significado narrativo	Representa a culpa e o peso emocional que Laura carregou
 6.7 Endings
 Ending	Condição	Descrição
+
 ✅ Paz (Ending Bom)	Coletar todas as fitas e cartas	Laura reconstrói sua memória completa, aceita sua história sem culpa e parte em paz. Cena final: o quarto vazio se preenche com luz e desaparece.
+
 🔁 Loop Eterno (Ending Ruim)	Zerar sem coletar todos os coletáveis	Laura não consegue aceitar o que viveu. A casa se reinicia do zero — ela está presa repetindo o mesmo ciclo para sempre, sem paz e sem saída.
+
 🖥️ Interface (HUD)
 Barra de stamina: aparece ao correr, some após alguns segundos parada
 Crosshair central: muda de aparência próximo a objetos interagíveis
 Sem minimapa — o jogador deve explorar organicamente
 Sem inventário manipulável — os coletáveis são experienciados, não gerenciados (inventário visível apenas para consulta)
+
 🏠 Ambientes
 Cômodo	Descrição	Coletáveis esperados
 Hall de entrada	Primeiro ambiente; escuro, porta trancada	1 carta
@@ -127,6 +134,7 @@ Sala de estar	Móveis velhos cobertos de pó; TV estática	1 fita, 1 carta
 Cozinha	Louça suja, calendário parado numa data	1 carta, 1 foto
 Quarto do pai	Cama desfeita, remédios na mesa de cabeceira	2 fitas, 2 cartas
 Quarto de Laura (vazio)	Completamente vazio; piso marcado onde havia móveis	1 carta (escondida no assoalho)
+
 🎨 Identidade Visual e Sonora
 Visual
 Estética low-poly com paleta de cores dessaturada (cinzas, verdes escuros, marrons)
@@ -138,6 +146,7 @@ Fitas cassete reproduzem áudio com efeito de fita degradada
 A Sombra tem tema sonoro próprio: frequências graves e respiração
 Dublagem de Laura (Mariane): reações ao ambiente, leitura de cartas em voz alta
 Voz do pai nas fitas cassete (Tadeu — a confirmar)
+
 🌐 Backend e Sistema Online
 Arquitetura
 Componente	Tecnologia	Responsável
@@ -156,6 +165,7 @@ O save local (fitas cassete) funciona independentemente do backend
 Ao zerar o jogo, o Godot envia os dados via HTTPRequest POST para a API
 A API valida e salva no banco de dados
 O ranking pode ser consultado no menu principal do jogo
+
 🧑‍💻 Divisão de Tarefas
 Membro	Função Principal	Tarefas
 Tadeu	Programação + Direção	Todo o código em Godot (movimentação, interação, shaders, saves, HTTPRequest); possível dublagem do pai
@@ -164,6 +174,7 @@ Mariane	Dublagem	Voz da protagonista Laura — reações e leitura de cartas
 Pedro C	Documentação	GDD atualizado e documentação técnica do TCC
 Pedro G	Game Design / Ideias	Contribuição com ideias de design, puzzles e narrativa
 Luiz A	Game Design / Ideias	Contribuição com ideias de design, puzzles e narrativa
+
 📅 Cronograma
 Fase	Atividades	Status
 Fase 1 — Pré-produção	GDD finalizado, divisão de tarefas, definição do backend	🟡 Em andamento
@@ -171,6 +182,7 @@ Fase 2 — Prototipagem	Level layout da casa, mecânicas básicas, primeiro cole
 Fase 3 — Produção	Todos os ambientes, coletáveis, sombra, dublagem, backend integrado	⚪ A iniciar
 Fase 4 — Polimento	Shaders, sons, ajuste de dificuldade dos esconderijos das fitas	⚪ A iniciar
 Fase 5 — Entrega	Build final, documentação TCC, apresentação	⚪ A iniciar
+
 🎯 Referências e Inspirações
 Referência	O que inspira no projeto
 Grim Fandango (LucasArts)	Estrutura de GDD fornecida pelo professor como modelo
