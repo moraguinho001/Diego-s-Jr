@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Meu primeiro React</title>
+</head>
+<body>
+  <script>
+function Cabecalho() {
+return (
+<header>
+<h1>Sistema da Squad</h1>
+<p>Projeto integrador do 3o trimestre</p>
+</header>
+);
+}
+function Cartao() {
+return (
+<div>
+<h3>Título do item</h3>
+<p>Descrição curta do item.</p>
+</div>
+);
+}
+function App() {
+return (
+<div>
+<Cabecalho / >
+<Cartao />
+<Cartao />
+<Cartao />
+</div>
+);
+}
+  function Lista() {
+const tarefas = [
+{ id: 1, texto: "Estudar React" },
+{ id: 2, texto: "Levar o cachorro" }
+];
+return (
+<ul>
+{tarefas.map((t))}
+</ul>
+);
+}
+    </script>
+</body>
+   
